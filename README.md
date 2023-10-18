@@ -1,4 +1,4 @@
-# basement.studio challenge
+# basement.studio challenge ☠
 
 ![Basement studio](./public/og.png "basement.supply")
 
