@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="65px" viewBox="0 0 64 64" version="1.1">
+<defs>
+<image id="image6" width="64" height="64" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAD2klEQVR4nO2Z3WtURxiHf5MEG4Xa3JTiBzaRtFQLVqiNQb0q9KoFvbC1pFJjNEjBy14ULAhqwdKIKCixrRf9J1oaP9JetKiFftGmtEYT0ARbColC0+ju5unFzOlOTja7Z805R8F54MDunnfmfX/v2Zkz844UCAQCgUAgEAgEAoFAIPCIYfJwAiyRtEbS85KWSWqRtNRdknTHXZOSxiUNSfrNGDOVdWyZJABYKekVd3VIapPUUGc3M5JGJF2RNCBpwBgznmacqQK0AQeBX8mOn4H3gVUPWq8kCWgCuoCvgJkMhccpAeeBN4DGByF8CbAfGKkQ3D/AcAaiR13fcYaBfcBjeQhvAHqA8VgQJeAc8DawHvg7gwRMAh3AbmDQ+fS5AbwFZDOxA5uA72NOp4FTwNPO5nFgKAPxEVeBFudrNfAxcDdmcwnYkKbwxUAfszM+BZwAVsRsj2QoPuJYzOcq4DT2YUQUgA9Y6LAA1jD3iX4OtFWwXUHlMZo20/P4b8cOQ5+fgGfuV/w24I7X2RjwehX7vhzER5yqEsdO4E/PdgJ4rV7xXUDR62QQeKpGm2t5qQduAfMurIAngQHPvgh0JxW/l/J4nwEOUeNdC7yQo/iIzhoxNQFHKa9PSsDuWuJfAu65BkVgT8Kk7c9bPfBuwth6KT/QArC5Wsaueg4SiXdtj+erHYD+OuLr9dqNAIuie/442iKp3X3+zBhzNqkD2d1d3iT2aYz5RNKn7murpJeje34CSCWsh5eKK0Q/Ad9IGnafdwF76+h88n6jWgATSQ2BXknRkB6VdDG6938CjDFFSTslFdxP/UBPQh/DtU1S51oSIyc+mi8KkrqMMfeqNdjD7NfgYWq/BtflNPH5bKwRUxPwIbNfg91JkhYthAqes0EeroXQGFV2fdiFkL8sLgK7Eon3OtkK3PY6GQd2VLH/KC/1zLMUBgx2S/6XZzsBvFqXeK/D54BfYs6/AFZXsF1Ofpuh1gr+nwUuxGx/BNrjtvUmoRk7lvy9wb/ASWzx07fNYzvcF/PZCpxhdl2ggJ27FiktgE7gu1gwd4F+3PaU7Asif1AuiLQDZykv3SO+BV5MTXgsCQ3YMXYz5rSE/ft1k31JrAf4mrlF2FHgTbIqicUS0Qy8Q+WZP8ui6FSF33/HvrrT+7vXkYhGl/ULzC1SZkkJ+BLYTpW6QK5ga3MHsGWoLJgBfgDeIzb5LoSsjsaWqXw01il7NFbvAUZJ0nVJl2WPxs4ZY26lGaeU3+Fos+zh6FpJK2UPRZ9wlyTd9q4xlQ9Hp/OILxAIBAKBQCAQCAQCgUDgkeI/u21EnIJKh0EAAAAASUVORK5CYII="/>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="55" height="46"/>
+</clipPath>
+<g id="surface7" clip-path="url(#clip1)">
+<use xlink:href="#image6" transform="matrix(0.859375,0,0,0.836699,0,-3.77436)"/>
+</g>
+<pattern id="pattern0" patternUnits="userSpaceOnUse" width="55" height="46" patternTransform="matrix(1.000568,0,0,1.012313,0,-1.910156)">
+<use xlink:href="#surface7"/>
+</pattern>
+</defs>
+<g id="surface2">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#pattern0);" d="M 0 -1.910156 L 55.03125 -1.910156 L 55.03125 44.65625 L 0 44.65625 Z M 0 -1.910156 "/>
+</g>
+</svg>
