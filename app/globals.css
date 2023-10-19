@@ -4,6 +4,12 @@
 
 @import "../css/fonts/basement-grotesque.css";
 
+*,
+*:before,
+*:after {
+  @apply cursor-eye;
+}
+
 html,
 body{
   height: 100%;
