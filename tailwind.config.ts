@@ -13,10 +13,12 @@ const config: Config = {
       'xs': '320px',
       ...defaultTheme.screens,
     },
+    cursor:{
+      default: "url('../public/ojo.png'), auto",
+      pointer: "url('../public/ojo.png'), auto",
+    },
     extend: {
-      cursor:{
-        'eye': 'url(./public/cursor.svg), pointer'
-      }
+     
     }
   },
   plugins: [],
