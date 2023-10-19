@@ -4,6 +4,10 @@
 
 @import "../css/fonts/basement-grotesque.css";
 
+:root {
+  --gap: 1rem;
+}
+
 *,
 *:before,
 *:after {
@@ -24,6 +28,8 @@ body{
   font-family: 'Basement Grotesque', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+
 
 button{ 
   font-family: inherit
