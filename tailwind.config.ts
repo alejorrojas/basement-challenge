@@ -1,26 +1,42 @@
-import type { Config } from 'tailwindcss'
-import defaultTheme from 'tailwindcss/defaultTheme'
-
+import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     screens: {
-      'xs': '320px',
+      xs: "320px",
       ...defaultTheme.screens,
     },
-    cursor:{
-      default: "url('../public/ojo.png'), auto",
-      pointer: "url('../public/ojo.png'), auto",
+    cursor: {
+      default: "url('../public/eye.svg'), auto",
     },
     extend: {
-     
-    }
+      fontFamily: {
+        basement: ["basement", "sans-serif"],
+      },
+      animation: {
+        marquee: "marquee 25s linear infinite",
+        "spin-slow": "spin 10s linear infinite",
+        "spin-slow-alt": "spin 8s linear infinite",
+        wiggle: "wiggle 200ms ease-in-out",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+      },
+    },
   },
   plugins: [],
-}
-export default config
+};
+export default config;

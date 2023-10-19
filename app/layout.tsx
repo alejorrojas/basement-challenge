@@ -1,26 +1,30 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Navbar from '../components/Navbar'
+import type { Metadata } from "next";
+import "./globals.css";
+import localFont from "next/font/local";
+import Navbar from "../components/Navbar";
 
-const inter = Inter({ subsets: ['latin'] })
+const BasementFont = localFont({
+  src: "../public/fonts/basement-grotesqueRegularRegular.woff",
+  variable: "--font-basement",
+});
 
 export const metadata: Metadata = {
-  title: 'Basement Supply',
-  description: 'Coding challenge for basement.studio.',
-}
+  title: "Basement Supply",
+  description:
+    "basement is a boutique studio that brings what brands envision to life, through branding, visual design & development of the highest quality.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar/>
+      <body className={`${BasementFont.className} font-basement`}>
+        <Navbar />
         {children}
       </body>
     </html>
-  )
+  );
 }
