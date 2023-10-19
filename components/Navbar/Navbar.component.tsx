@@ -3,7 +3,7 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav className='p-12 xs:p-6 xs:pt-8 xs:pr-5 w-full flex justify-between text-center items-center '>
+    <nav className='p-12 mb-10 xs:p-6 xs:pt-8 xs:pr-5 w-full flex justify-between text-center items-center '>
         <div className='xs:hidden md:hidden lg:block'>
           <Image src="/logo.svg" width={200} height={200} alt='logo-basement' />
         </div>
