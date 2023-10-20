@@ -7,8 +7,8 @@ import Marquee from '../components/Marquee';
 export default function Home() {
   return (
      <main className="h-full flex flex-col items-center  m-0 bg-black">
-      <header className="w-full flex flex-col items-center justify-center">
-        <Image className='mb-20' alt="Basement" src={header} />
+      <header className="w-full flex flex-col gap-12 items-center justify-center">
+        <Image className='w-full md:px-8 xs:px-4 px-10' alt="Basement" src={header} />
         <section className='overflow-hidden w-full'>
           <Marquee/>
         </section>
@@ -16,8 +16,8 @@ export default function Home() {
       <section className=''>
 
       </section>
-      <footer>
-       <Image alt="Basement" src={footer} />
+      <footer className='w-full md:px-8 xs:px-4 px-10'>
+       <Image alt="Basement" className='w-full' src={footer} />
       </footer>
      </main>
   )

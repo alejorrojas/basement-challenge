@@ -3,18 +3,18 @@ import React from 'react'
 const Marquee = () => {
   return (
     <>
-        <hr className="h-px  bg-gray-200 border-1 dark:bg-gray-700"/>
+        <hr className="h-px  bg-white border-1 "/>
             <div className='overflow-x-hidden whitespace-nowrap'>
-                <div className="py-6 animate-marquee inline-block">
-                    <span className="text-4xl mx-4">A man can’t have enough basement swag   —  A man can’t have enough basement swag   —</span>
-                    <span className="text-4xl mx-4">A man can’t have enough basement swag   —  A man can’t have enough basement swag   —</span>
+                <div className="xl:py-8 md:py-6 xs:py-2 animate-marquee inline-block">
+                    <span className="xl:text-6xl md:text-4xl xs:text-2xl mx-4">A man can’t have enough basement swag   —  A man can’t have enough basement swag   —</span>
+                    <span className="xl:text-6xl md:text-4xl xs:text-2xl mx-4">A man can’t have enough basement swag   —  A man can’t have enough basement swag   —</span>
                 </div>
-                <div className="py-6 animate-marquee inline-block">
-                    <span className="text-4xl mx-4">A man can’t have enough basement swag   —  A man can’t have enough basement swag   —</span>
-                    <span className="text-4xl mx-4">A man can’t have enough basement swag   —  A man can’t have enough basement swag   —</span>
+                <div className="xl:py-8 md:py-6 xs:py-2 animate-marquee inline-block">
+                    <span className="xl:text-6xl md:text-4xl xs:text-2xl mx-4">A man can’t have enough basement swag   —  A man can’t have enough basement swag   —</span>
+                    <span className="xl:text-6xl md:text-4xl xs:text-2xl mx-4">A man can’t have enough basement swag   —  A man can’t have enough basement swag   —</span>
                 </div>
             </div>
-        <hr className="h-px  bg-gray-200 border-1 dark:bg-gray-700"/>
+        <hr className="h-px bg-white border-1"/>
     </>
   )
 }
