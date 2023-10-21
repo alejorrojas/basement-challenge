@@ -23,11 +23,11 @@ export default async function Home() {
           <Marquee/>
         </section>
       </header>
-      {/* <section className='flex h-[50%] w-full justify-center gap-32 md:flex-row xs:flex-col'>
+      <section className='flex h-1/2 w-full justify-center gap-32 md:flex-row xs:flex-col'>
         {products?.map(product => (
           <Card key={product.id} {...product} />
         ) )}
-      </section> */}
+      </section>
       <footer className='w-full md:px-8 xs:px-4 px-10'>
        <Image alt="Basement" className='w-full' src={footer} />
       </footer>
