@@ -1,0 +1,78 @@
+[33mcommit 10c2f9e6debf4b919142770f630e4f082aba4c12[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;32msuper-style[m[33m)[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Fri Oct 20 21:31:29 2023 -0300
+
+    bug but interesting style
+
+[33mcommit fc66dd5548d70831225369816e3eaf1421c71b7d[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Fri Oct 20 21:15:39 2023 -0300
+
+    add card component - bug card styles
+
+[33mcommit 0c0503382ed59aa6ab9b10ad8bff546c617eee00[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Fri Oct 20 14:12:27 2023 -0300
+
+    add responsive design
+
+[33mcommit f9291c3087ee1c0cd5c232e583bb368bd25d8a43[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Thu Oct 19 10:01:37 2023 -0300
+
+    add marquee and style home
+
+[33mcommit 921bbf94c7e5660fbc864dd71330200e0e6c171b[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Thu Oct 19 00:21:08 2023 -0300
+
+    add home page basic structure
+
+[33mcommit 43b36c871ff2c6003f4ef212c6f5d42069eaa67a[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Wed Oct 18 23:49:20 2023 -0300
+
+    add responsive navbar design
+
+[33mcommit 06d502d6b50a1188c87641165d7903c9362ccda3[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Wed Oct 18 23:25:47 2023 -0300
+
+    add navbar desktop
+
+[33mcommit 5d61a39fe674edb685bfe5d0727aac54a34a3b0e[m
+Merge: bcd16ec 6f560ea
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Wed Oct 18 22:14:47 2023 -0300
+
+    Merge branch 'main' of github.com:alejorrojas/basement-challenge
+
+[33mcommit bcd16ec86ccac849bafbbe5492554b68e0268414[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Wed Oct 18 22:14:38 2023 -0300
+
+    add public img - set initial navbar
+
+[33mcommit 6f560ea1c05bf8775292e9166308ed922a848cf6[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Wed Oct 18 13:24:15 2023 -0300
+
+    Update README.md
+
+[33mcommit 78c940c0ea6e8b7b9a826e56516fd4e352f7ce66[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Wed Oct 18 12:35:41 2023 -0300
+
+    basic setup
+
+[33mcommit d68b5675928361788a23331d748d29ab485c3419[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Wed Oct 18 12:35:26 2023 -0300
+
+    Update README.md
+
+[33mcommit 0d5b3baefecb5219afbc2d5109efd67763b00103[m
+Author: Alejo <alejoivanrojas@gmail.com>
+Date:   Wed Oct 18 12:04:38 2023 -0300
+
+    Initial commit from Create Next App
