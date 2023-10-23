@@ -8,7 +8,7 @@ const Navbar = () => {
           <Image src="/logo.svg" width={200} height={200} alt='logo-basement' />
         </div>
         <div className='lg:hidden'>
-          <Image src="/logo-sm.png" className='w-10' width={100} height={100} alt='logo-basement' />
+          <Image src="/logo-sm.png" className='w-10' width={96} height={96} alt='logo-basement' />
         </div>
         <div className='flex xs:hidden md:hidden lg:block'>
           <Image src="/navbar.svg" className='w-72 xl:w-80' priority={true} width={100} height={200} alt='icon-basement' />
