@@ -23,7 +23,7 @@ export default async function Home() {
           <Marquee/>
         </section>
       </header>
-      <section className='md:px-8 xs:px-4 px-10 flex h-fit w-full justify-center gap-32 md:flex-row xs:flex-col'>
+      <section className='md:px-8 xs:px-4 px-10 flex  w-full justify-center md:gap-10 gap-32 lg:flex-row xs:flex-col'>
         {products?.map(product => (
           <Card key={product.id} {...product} />
         ) )}
