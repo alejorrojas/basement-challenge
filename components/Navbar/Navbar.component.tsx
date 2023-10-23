@@ -1,5 +1,7 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
+import logoSmall from '../../public/logo-sm.svg'
 
 const Navbar = () => {
   return (
@@ -8,13 +10,13 @@ const Navbar = () => {
           <Image src="/logo.svg" width={200} height={200} alt='logo-basement' />
         </div>
         <div className='lg:hidden'>
-          <Image src="/logo-sm.png" className='w-10' width={96} height={96} alt='logo-basement' />
+          <Image src={logoSmall} className='w-10' alt='logo-basement' />
         </div>
         <div className='flex xs:hidden md:hidden lg:block'>
           <Image src="/navbar.svg" className='w-72 xl:w-80' priority={true} width={100} height={200} alt='icon-basement' />
         </div>
         <div className='m-0 xs:p-2 md:p-3 w-40 xs:w-32 2xl:w-40 xs:border-2  cursor-pointer border-[3px] rounded-[2rem] border-solid border-white'>
-          <button className='cursor-pointer 2xl:text-xl'>
+          <button onClick={()=>alert('click!')} className='cursor-pointer 2xl:text-xl'>
               CART (0)
           </button>
         </div>

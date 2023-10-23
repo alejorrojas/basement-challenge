@@ -14,12 +14,14 @@ const config: Config = {
       ...defaultTheme.screens,
     },
     cursor:{
-      default: "url('../public/ojo.png'), auto",
-      pointer: "url('../public/ojo.png'), auto",
+      default: "url('../public/eye.svg'), auto",
+      pointer: "url('../public/eye.svg'), auto",
     },
     extend: {
       animation: {
         marquee: 'marquee 25s linear infinite',
+        'spin-slow': 'spin 10s linear infinite',
+        'spin-slow-alt': 'spin 8s linear infinite',
       },
       keyframes: {
         marquee: {

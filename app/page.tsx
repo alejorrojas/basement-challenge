@@ -23,6 +23,8 @@ export default async function Home() {
           <Marquee/>
         </section>
       </header>
+      <Image className='xs:invisible lg:visible absolute lg:left-28 lg:w-28 lg:top-[52%] xl:top-[65%] xl:w-40 2xl:w-48 2xl:top-[70%] animate-spin-slow' src="/asterisk.svg" width={150} height={150} alt=''/>
+      <Image className='xs:invisible lg:visible absolute lg:right-20 lg:w-28 lg:top-[40%]  xl:top-[50%] xl:w-40 2xl:w-48 2xl:top-[58%] animate-spin-slow-alt' src="/asterisk.svg" width={150} height={150} alt=''/>
       <section className='md:px-8 xs:px-4 px-10 flex  w-full justify-center xs:gap-10 gap-32 lg:flex-row xs:flex-col'>
         {products?.map(product => (
           <Card key={product.id} {...product} />
