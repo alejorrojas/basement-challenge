@@ -66,6 +66,8 @@ const CardCheckout: FC<Product> = ({image, name, description, id, options, price
               <div className='flex gap-2 2xl:gap-6 items-center'>
                 <h4 className='text-[1rem] 2xl:text-2xl' >SIZE: </h4>
 
+
+
                 {options[0].values.map(value =>(
                   <button  onClick={()=>updateSize(value)} className={`${value === checkoutProduct.checkoutSize ? "border-white border-2 rounded-full " : "border-black border-2 rounded-full "} xl:px-2 xl:py-1 2xl:px-3 2xl:py-2  text-base `} key={value}>
                     {value}
