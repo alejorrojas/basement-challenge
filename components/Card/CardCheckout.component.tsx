@@ -48,32 +48,32 @@ const CardCheckout: FC<Product> = ({image, name, description, id, options, price
 
       <div className='flex flex-col justify-between w-full'>
         <header>
-          <h3 className='xs:text-sm text-[1rem] 2xl:text-3xl'>{name.toUpperCase()}</h3>
+          <h3 className='xs:max-md:text-xs  text-[1rem] 2xl:text-3xl'>{name.toUpperCase()}</h3>
           <h4 className='xs:text-xs text-base 2xl:text-xl text-[#999999] '>{description}</h4>
         </header>
 
         <footer className='relative flex justify-between'>
             <div className='flex flex-col gap-4'>
               <div className='flex xs:gap-4 gap-8 items-center'>
-                <h4 className='xs:text-sm text-[1rem] 2xl:text-2xl'>QUANTITY: </h4>
-                <div className='m-0 xs:w-16 xs:px-2 p-1 2xl:p-2 xl:px-3  md:w-24 flex justify-between xs:text-sm md:text-lg xs:border-2 border-[3px] rounded-[2rem] border-solid border-white cursor-pointer'>
+                <h4 className='xs:max-md:text-xs  text-[1rem] 2xl:text-2xl'>QUANTITY: </h4>
+                <div className='m-0 xs:w-16 xs:px-2 p-1 2xl:p-2 xl:px-3  md:w-24 flex justify-between xs:max-md:text-xs  md:text-lg xs:border-2 border-[3px] rounded-[2rem] border-solid border-white cursor-pointer'>
                   <button onClick={removeQuantity} >-</button>
                   <span className='xs:text-xs text-[1rem] 2xl:text-xl' >{checkoutProduct?.quantity}</span>
                   <button onClick={addQuantity} >+</button>
                 </div>
               </div>
 
-              <div className='flex  gap-1 2xl:gap-6 items-center'>
+              <div className='flex gap-1 2xl:gap-6 items-center'>
                 <div className='flex items-center'>
-                  <h4 className='xs:max-mg:text-sm text-[1rem] 2xl:text-2xl' >SIZE: </h4>
+                  <h4 className='xs:max-md:text-xs text-[1rem] 2xl:text-2xl' >SIZE: </h4>
                   {options[0].values.map(value =>(
-                    <button  onClick={()=>updateSize(value)} className={`${value === checkoutProduct.checkoutSize ? "border-white border-2  rounded-full " : "border-black border-2   rounded-full "} xs:max-mg:border-[1px] xs:px-1 xl:px-3 xl:py-1 2xl:px-3 2xl:py-2 xs:max-mg:text-sm  text-base `} key={value}>
+                    <button  onClick={()=>updateSize(value)} className={`${value === checkoutProduct.checkoutSize ? "border-white border-2  rounded-full " : "border-black border-2   rounded-full "} xs:max-md:border-[1px] xs:px-1 xl:px-3 xl:py-1 2xl:px-3 2xl:py-2 xs:max-md:text-sm  text-base `} key={value}>
                       {value}
                     </button>
                   )) }
                 </div>
               </div>
-                <h3 className='xs:text-sm  md:text-2xl 2xl:text-4xl absolute right-0 bottom-0'>${price}</h3>
+                <h3 className='xs:max-md:text-xs   md:text-2xl 2xl:text-4xl absolute right-0 bottom-0'>${price}</h3>
             </div>
           </footer>
        </div>
