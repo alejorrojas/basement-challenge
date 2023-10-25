@@ -3,18 +3,18 @@ import Image from 'next/image'
 import React, { FC, useState } from 'react'
 import { Product, ProductCheckout } from '../../data/products.types'
 import { useLocalStorage } from 'usehooks-ts'
-import * as ScrollArea from '@radix-ui/react-scroll-area';
+import { v4 as uuidv4 } from 'uuid';
 
 
 const Card: FC<Product> = (product) => {
   const {image, name, price} = product
   const [animate, setAnimate] = useState(false);
   const [products, setProducts] = useLocalStorage<ProductCheckout[]>('products', [])
-
+  
 
   return (
         <div onClick={()=>{
-            setProducts([...products, {...product, quantity: 1, checkoutSize: 'S'}])
+            setProducts([...products, {...product, id: uuidv4(), quantity: 1, checkoutSize: 'S'}])
             setAnimate(true)
           }} 
           onAnimationEnd={() => setAnimate(false)}

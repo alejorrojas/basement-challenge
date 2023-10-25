@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Basement Supply',
-  description: 'Coding challenge for basement.studio.',
+  description: 'basement is a boutique studio that brings what brands envision to life, through branding, visual design & development of the highest quality.',
 }
 
 export default function RootLayout({
