@@ -1,3 +1,7 @@
 import Card from "./Card.component";
+import CardCheckout from "./CardCheckout.component"
 
-export default Card
+export {
+    Card,
+    CardCheckout
+}

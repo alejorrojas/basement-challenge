@@ -1,20 +1,33 @@
+'use client'
 import Image from 'next/image'
-import React, { FC } from 'react'
-import { Product } from '../../data/products.types'
+import React, { FC, useState } from 'react'
+import { Product, ProductCheckout } from '../../data/products.types'
+import { useLocalStorage } from 'usehooks-ts'
+import * as ScrollArea from '@radix-ui/react-scroll-area';
 
-const Card: FC<Product> = ({image, name, price}) => {
+
+const Card: FC<Product> = (product) => {
+  const {image, name, price} = product
+  const [animate, setAnimate] = useState(false);
+  const [products, setProducts] = useLocalStorage<ProductCheckout[]>('products', [])
+
+
   return (
-  
-        <div className='relative flex justify-center items-center flex-col group'>
-          <Image className='bg-gradient-to-t from-[#1c1c1c] group-hover:from-black  ' height={1000} width={1000} src={image} alt={name} />
-          <div className='xs:hidden lg:flex absolute w-full h-full -top-10  justify-center invisible group-hover:visible transition-all ease-in-out delay-200'>
-              <Image className='xs:w-48 md:w-72 lg:w-32 xl:w-56 2xl:w-72'  src='/hover.svg' width={300} height={300} alt='' />
+        <div onClick={()=>{
+            setProducts([...products, {...product, quantity: 1, checkoutSize: 'S'}])
+            setAnimate(true)
+          }} 
+          onAnimationEnd={() => setAnimate(false)}
+          className='transition-transform group-active:scale-y-100  relative flex justify-center items-center flex-col group'>
+          <Image className='bg-gradient-to-t from-[#1c1c1c] group-hover:from-black' height={1000} width={1000} src={image} alt={name} />
+          <div className='xs:hidden lg:flex absolute w-full h-full -top-10  justify-center invisible group-hover:visible  ease-in-out delay-200'>
+              <Image className={`${animate && 'animate-wiggle'} xs:w-48 md:w-72 lg:w-32 xl:w-56 2xl:w-72`}  src='/hover.svg' width={300} height={300} alt='' />
           </div>
           <div className='w-full xl:text-3xl  lg:text-xl flex border-t-4 pt-4 border-white justify-between'>
             <p>{name}</p>
             <p>$ {price}</p>
           </div>
-
+         
         </div>
   )
 }
