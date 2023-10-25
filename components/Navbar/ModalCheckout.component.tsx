@@ -22,7 +22,7 @@ const ModalCheckout = () => {
             <Dialog.Content className='flex xs:max-lg:px-4 justify-between flex-col z-50 fixed top-0 right-0 xl:w-[45%] min-h-[80%] lg:w-[60%] xs:max-lg:w-screen xs:max-lg:h-screen  bg-black border-solid border-t-0 border-r-0 border-white border-2 xs:max-lg:border-0'>
             <div className='xs:max-lg:py-4 lg:p-8 flex flex-col'>
                 <Dialog.Close className='cursor-pointer text-right text-xl xs:mb-4 lg:mb-10 font-extrabold' >→ CLOSE</Dialog.Close>
-                <Dialog.Title className='xs:max-md:text-[5.5rem]  xs:max-md:flex-col xs:mb-4 2xl:mb-8 justify-center gap-[3vw] flex text-center md:max-lg:text-[14vw] lg:text-[5rem] 2xl:text-8xl'>
+                <Dialog.Title className='xs:max-md:text-[5.5rem]  xs:max-md:flex-col xs:mb-4 2xl:mb-8 justify-center gap-1 flex text-center md:max-lg:text-[14vw] lg:text-[5rem] 2xl:text-8xl'>
                     <span>YOUR</span> 
                     <span className='text-black text-shadow-white' >CART</span>
                 </Dialog.Title>
@@ -35,7 +35,7 @@ const ModalCheckout = () => {
                     </div>
                 </div>
                 </div>
-                <div className='xs:max-lg:fixed xs:max-lg:bottom-0 xs:max-lg:h-fit  bg-black flex xs:max-lg:flex-col md:gap-3 xs:max-lg:border-0  justify-between xs:text-2xl xl:text-2xl 2xl:text-4xl border-solid border-t-2 border-white'>
+                <div className='xs:max-lg:fixed xs:max-lg:bottom-0 xs:max-lg:mt-auto bg-black flex xs:max-lg:flex-col md:gap-3 xs:max-lg:border-0  justify-between xs:text-2xl xl:text-2xl 2xl:text-4xl border-solid border-t-2 border-white'>
                     <div className='flex items-center xs:max-lg:justify-between'>
                         <h3 className='xs:max-lg:py-4 lg:p-8 w-3/4'>TOTAL:  </h3>
                         <span> ${totalPrice()}</span>
