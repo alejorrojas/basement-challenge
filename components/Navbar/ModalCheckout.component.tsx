@@ -20,22 +20,22 @@ const ModalCheckout = () => {
         <Dialog.Portal>
             <Dialog.Overlay className='fixed inset-0 bg-black/50' />
             <Dialog.Content className='flex xs:max-lg:px-4 justify-between flex-col z-50 fixed top-0 right-0 xl:w-[45%] min-h-[80%] lg:w-[60%] xs:max-lg:w-screen xs:max-lg:h-screen  bg-black border-solid border-t-0 border-r-0 border-white border-2 xs:max-lg:border-0'>
-            <div className='xs:max-lg:px-2 p-8 flex flex-col'>
+            <div className='xs:max-lg:py-4 lg:p-8 flex flex-col'>
                 <Dialog.Close className='cursor-pointer text-right text-xl xs:mb-4 lg:mb-10 font-extrabold' >→ CLOSE</Dialog.Close>
                 <Dialog.Title className='xs:max-md:text-[5.5rem]  xs:max-md:flex-col xs:mb-4 2xl:mb-8 justify-center gap-[3vw] flex text-center md:max-lg:text-[14vw] lg:text-[5rem] 2xl:text-8xl'>
                     <span>YOUR</span> 
                     <span className='text-black text-shadow-white' >CART</span>
                 </Dialog.Title>
             
-                <div className='overflow-y-auto xs:max-h-[60vh] xl:max-h-[50vh]  max-h-96 flex flex-col gap-10'>
-                    <div className='px-2 flex gap-8 flex-col'>
+                <div className='overflow-y-auto xl:max-h-[50vh] max-h-96 flex flex-col gap-10'>
+                    <div className='flex gap-8 flex-col'>
                         {products.map(product => (
                             <CardCheckout key={product.id}  {...product} />     
                             ))}
                     </div>
                 </div>
                 </div>
-                <div className='flex xs:max-lg:flex-col md:gap-3 xs:max-lg:border-0  justify-between xs:text-2xl xl:text-2xl 2xl:text-4xl border-solid border-t-2 border-white'>
+                <div className='xs:max-lg:fixed xs:max-lg:bottom-0 xs:max-lg:h-fit  bg-black flex xs:max-lg:flex-col md:gap-3 xs:max-lg:border-0  justify-between xs:text-2xl xl:text-2xl 2xl:text-4xl border-solid border-t-2 border-white'>
                     <div className='flex items-center xs:max-lg:justify-between'>
                         <h3 className='xs:max-lg:py-4 lg:p-8 w-3/4'>TOTAL:  </h3>
                         <span> ${totalPrice()}</span>
