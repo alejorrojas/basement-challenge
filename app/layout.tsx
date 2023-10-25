@@ -1,8 +1,12 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import localFont from 'next/font/local'
 import Navbar from '../components/Navbar'
 
-
+const BasementFont = localFont({
+  src: '../css/fonts/basement-grotesqueRegularRegular.woff2',
+})
+ 
 
 export const metadata: Metadata = {
   title: 'Basement Supply',
@@ -16,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={BasementFont.className} >
         <Navbar/>
         {children}
       </body>
