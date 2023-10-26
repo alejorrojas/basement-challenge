@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "../components/Navbar";
+import {} from "../public/fonts/"
 
 const BasementFont = localFont({
-  src: "../css/fonts/basement-grotesqueRegularRegular.woff",
+  src: "../public/fonts/basement-grotesqueRegularRegular.woff",
   variable: "--font-basement",
 });
 
