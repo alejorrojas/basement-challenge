@@ -1,3 +1,3 @@
 import Marquee from "./Marquee.component";
 
-export default Marquee
+export default Marquee;
