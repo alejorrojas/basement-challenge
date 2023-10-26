@@ -25,7 +25,7 @@ const Card: FC<Product> = (product) => {
       onAnimationEnd={() => setAnimate(false)}
       className="transition-transform group-active:scale-y-100  relative flex justify-center items-center flex-col group"
     >
-                <Image
+      <Image
         className="bg-gradient-to-t from-[#1c1c1c] group-hover:from-black"
         height={1000}
         width={1000}

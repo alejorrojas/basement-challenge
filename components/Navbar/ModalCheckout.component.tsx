@@ -34,7 +34,7 @@ const ModalCheckout = () => {
               <span className="m-0 text-black text-shadow-white">CART</span>
             </Dialog.Title>
 
-            <div className="overflow-y-auto  xs:max-h-[30vh] xl:max-h-[50vh] max-h-96 flex flex-col gap-10">
+            <div className="overflow-y-auto  xs:h-full xl:max-h-[50vh] max-h-96 flex flex-col gap-10">
               <div className="flex gap-8 flex-col">
                 {products.map((product) => (
                   <CardCheckout key={product.id} {...product} />
@@ -42,7 +42,7 @@ const ModalCheckout = () => {
               </div>
             </div>
           </div>
-          <div className="flex xs:max-lg:flex-col md:gap-3 xs:max-lg:border-0  justify-between xs:text-2xl xl:text-2xl 2xl:text-4xl border-solid border-t-2 border-white">
+          <div className="xs:max-lg:fixed xs:max-lg:bottom-0  flex xs:max-lg:flex-col md:gap-3 xs:max-lg:border-0  justify-between xs:text-2xl xl:text-2xl 2xl:text-4xl border-solid border-t-2 border-white">
             <div className="flex items-center xs:max-lg:justify-between">
               <h3 className="xs:max-lg:py-4 lg:p-8 w-3/4">TOTAL: </h3>
               <span> ${totalPrice()}</span>
