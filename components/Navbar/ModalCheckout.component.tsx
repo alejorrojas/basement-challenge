@@ -29,7 +29,7 @@ const ModalCheckout = () => {
             <Dialog.Close className="cursor-pointer text-right text-xl xs:mb-2 xl:mb-4 font-extrabold">
               → CLOSE
             </Dialog.Close>
-            <Dialog.Title className="xs:max-md:text-[5rem] md:gap-4 xs:gap-1 xs:max-md:flex-col xs:max-md:mb-2 lg:mb-4 justify-center gap-0  flex text-center md:max-lg:text-[14vw] lg:text-[5rem] 2xl:text-8xl">
+            <Dialog.Title className="xs:max-md:text-[2rem] md:gap-4 xs:gap-1 xs:max-md:flex-col xs:max-md:mb-0 lg:mb-4 justify-center gap-0  flex text-center md:max-lg:text-[14vw] lg:text-[5rem] 2xl:text-8xl">
               <span className="m-0">YOUR</span>
               <span className="m-0 text-black text-shadow-white">CART</span>
             </Dialog.Title>
