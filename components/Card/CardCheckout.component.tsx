@@ -76,7 +76,7 @@ const CardCheckout: FC<Product> = ({
               <h4 className="xs:max-md:text-xs  text-[1rem] 2xl:text-2xl">
                 QUANTITY:{" "}
               </h4>
-              <div className="m-0 xs:w-16 xs:px-2  2xl:py-2  xl:px-5 gap-1 md:w-24 flex justify-between xs:max-md:text-xs  md:text-lg xs:border-2 border-[3px] rounded-[2rem] border-solid border-white cursor-pointer">
+              <div className="m-0 xs:w-16 xs:px-2  2xl:py-2  xl:px-5 gap-1 items-center md:w-24 flex justify-between xs:max-md:text-xs  md:text-lg xs:border-2 border-[3px] rounded-[2rem] border-solid border-white cursor-pointer">
                 <button onClick={removeQuantity}>-</button>
                 <span className="xs:text-xs text-[1rem] 2xl:text-xl">
                   {checkoutProduct?.quantity}
