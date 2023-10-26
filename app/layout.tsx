@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={BasementFont.className}>
+      <body className={`${BasementFont.variable} font-basement`}>
         <Navbar />
         {children}
       </body>
