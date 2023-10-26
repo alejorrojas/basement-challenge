@@ -17,7 +17,7 @@ const config: Config = {
     },
     extend: {
       fontFamily: {
-         basement: ["Basement Grotesque", "Helvetica"]
+         basement: ["basement", "sans-serif"]
       },
       animation: {
         marquee: "marquee 25s linear infinite",

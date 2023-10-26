@@ -18,6 +18,11 @@
   }
 }
 
+@font-face { 
+    font-family: "basement"; 
+    src: url("../public/fonts/basement-grotesqueRegularRegular.woff"); 
+} 
+
 *,
 *:before,
 *:after {

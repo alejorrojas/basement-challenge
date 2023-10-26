@@ -15,7 +15,7 @@ export default async function Home() {
   const products = await getProducts();
 
   return (
-    <main className="h-full flex flex-col items-center xs:gap-5 md:gap-20 bg-black">
+    <main className="font-basement h-full flex flex-col items-center xs:gap-5 md:gap-20 bg-black">
       <header className="w-full flex flex-col xs:gap-5 md:gap-12 items-center justify-center">
         <Image
           className="w-full md:px-8 xs:px-4 px-10"

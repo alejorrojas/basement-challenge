@@ -26,15 +26,15 @@ const ModalCheckout = () => {
         <Dialog.Overlay className="fixed inset-0 bg-black/50" />
         <Dialog.Content className="flex xs:max-lg:px-4 justify-between flex-col z-50 fixed top-0 right-0 xl:w-[45%] min-h-[80%] lg:w-[60%] xs:max-lg:w-screen xs:max-lg:h-screen  bg-black border-solid border-t-0 border-r-0 border-white border-2 xs:max-lg:border-0">
           <div className="xs:max-lg:py-4 lg:p-8 flex flex-col">
-            <Dialog.Close className="cursor-pointer text-right text-xl xs:mb-4 xl:mb-10 font-extrabold">
+            <Dialog.Close className="cursor-pointer text-right text-xl xs:mb-2 xl:mb-4 font-extrabold">
               → CLOSE
             </Dialog.Close>
-            <Dialog.Title className="xs:max-md:text-[5rem] md:gap-4 xs:max-md:flex-col xs:max-md:mb-4 2xl:mb-8 justify-center gap-0  flex text-center md:max-lg:text-[14vw] lg:text-[5rem] 2xl:text-8xl">
+            <Dialog.Title className="xs:max-md:text-[5rem] md:gap-4 xs:gap-1 xs:max-md:flex-col xs:max-md:mb-2 lg:mb-4 justify-center gap-0  flex text-center md:max-lg:text-[14vw] lg:text-[5rem] 2xl:text-8xl">
               <span className="m-0">YOUR</span>
               <span className="m-0 text-black text-shadow-white">CART</span>
             </Dialog.Title>
 
-            <div className="overflow-y-auto  xs:max-h-[20vh] xl:max-h-[50vh] max-h-96 flex flex-col gap-10">
+            <div className="overflow-y-auto  xs:max-h-[30vh] xl:max-h-[50vh] max-h-96 flex flex-col gap-10">
               <div className="flex gap-8 flex-col">
                 {products.map((product) => (
                   <CardCheckout key={product.id} {...product} />

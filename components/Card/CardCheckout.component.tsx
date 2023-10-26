@@ -96,8 +96,8 @@ const CardCheckout: FC<Product> = ({
                     className={`${
                       value === checkoutProduct.checkoutSize
                         ? "border-white border-2  rounded-full "
-                        : "border-black border-2   rounded-full "
-                    } xs:max-md:border-[1px] xs:px-1 xl:px-3 xl:py-1 2xl:px-3 2xl:py-1 xs:max-md:text-sm  text-base`}
+                        : "border-black border-2  rounded-full "
+                    } xs:max-md:border-[1px] xs:px-1  xl:w-9 xl:h-9 xl:p-1 2xl:w-10 2xl:h-10 2xl:p-2 xs:max-md:text-sm   text-sm`}
                     key={value}
                   >
                     {value}

@@ -1,10 +1,7 @@
 "use client";
-import { useLocalStorage } from "usehooks-ts";
 import Image from "next/image";
 import React, { Fragment, useCallback, useState } from "react";
 import logoSmall from "../../public/logo-sm.svg";
-import { Product } from "../../data/products.types";
-import * as Dialog from "@radix-ui/react-dialog";
 import ModalCheckout from "./ModalCheckout.component";
 
 const Navbar = () => {
