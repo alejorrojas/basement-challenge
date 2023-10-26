@@ -42,7 +42,7 @@ const ModalCheckout = () => {
               </div>
             </div>
           </div>
-          <div className="xs:max-lg:fixed xs:max-lg:bottom-0  flex xs:max-lg:flex-col md:gap-3 xs:max-lg:border-0  justify-between xs:text-2xl xl:text-2xl 2xl:text-4xl border-solid border-t-2 border-white">
+          <div className="xs:max-lg:fixed xs:max-lg:bottom-0 bg-black  flex xs:max-lg:flex-col md:gap-3 xs:max-lg:border-0  justify-between xs:text-2xl xl:text-2xl 2xl:text-4xl border-solid border-t-2 border-white">
             <div className="flex items-center xs:max-lg:justify-between">
               <h3 className="xs:max-lg:py-4 lg:p-8 w-3/4">TOTAL: </h3>
               <span> ${totalPrice()}</span>
