@@ -53,7 +53,7 @@ const CardCheckout: FC<Product> = ({
   return (
     <div className="flex border-solid xs:max-md:p-2 border-2 xs:max-md:border-[1px] border-white w-full  p-4 gap-3 2xl:gap-10">
       <Image
-        className="bg-gradient-to-t from-[#1c1c1c] xs:w-24 md:w-32  lg:max-2xl:w-36"
+        className="bg-gradient-to-t from-[#1c1c1c] xs:w-24 md:w-32  lg:max-2xl:w-36 2xl:w-44"
         width={200}
         height={300}
         src={image}
@@ -62,32 +62,32 @@ const CardCheckout: FC<Product> = ({
 
       <div className="flex flex-col justify-between w-full">
         <header className="flex flex-col gap-1 ">
-          <h3 className="xs:max-md:text-xs text-left text-[1rem] 2xl:text-3xl">
+          <h3 className="xs:max-md:text-xs text-left text-[1rem] 2xl:text-xl">
             {name.toUpperCase()}
           </h3>
-          <h4 className="xs:text-xs text-base text-left 2xl:text-xl text-[#999999] ">
+          <h4 className="xs:text-xs text-base text-left 2xl:text-lg text-[#999999] ">
             {description}
           </h4>
         </header>
 
-        <footer className="xs:max-lg:mt-2 relative flex justify-between">
+        <footer className="xs:max-lg:mt-2 relative w-full flex justify-between">
           <div className="flex flex-col gap-4">
             <div className="flex xs:gap-4 gap-8 items-center">
-              <h4 className="xs:max-md:text-xs  text-[1rem] 2xl:text-2xl">
+              <h4 className="xs:max-md:text-xs  text-[1rem] 2xl:text-xl">
                 QUANTITY:{" "}
               </h4>
               <div className="m-0 xs:w-16 xs:px-2  2xl:py-2  xl:px-5 gap-1 items-center md:w-24 flex justify-between xs:max-md:text-xs  md:text-lg xs:border-2 border-[3px] rounded-[2rem] border-solid border-white cursor-pointer">
                 <button onClick={removeQuantity}>-</button>
-                <span className="xs:text-xs text-[1rem] 2xl:text-xl">
+                <span className="xs:text-xs text-[1rem] 2xl:text-lg">
                   {checkoutProduct?.quantity}
                 </span>
                 <button onClick={addQuantity}>+</button>
               </div>
             </div>
 
-            <div className="flex xs:max-lg:flex-col xs:max-lg:items-start gap-1 2xl:gap-6 items-center">
-              <div className="flex items-center xs:max-md:gap-1 gap-3">
-                <h4 className="xs:max-md:text-xs text-[1rem] 2xl:text-2xl">
+            <div className="flex xs:max-lg:flex-col lg:justify-between xs:max-lg:items-start gap-1 2xl:gap-6">
+              <div className="flex items-center  xs:max-md:gap-1 gap-3">
+                <h4 className="xs:max-md:text-xs text-[1rem] 2xl:text-xl">
                   SIZE:{" "}
                 </h4>
                 {options[0].values.map((value) => (
@@ -104,7 +104,7 @@ const CardCheckout: FC<Product> = ({
                   </button>
                 ))}
               </div>
-              <h3 className="xs:max-md:text-base  md:text-2xl 2xl:text-4xl">
+              <h3 className="xs:max-md:text-base lg:absolute lg:right-0 md:text-xl 2xl:text-4xl">
                 ${price}
               </h3>
             </div>
