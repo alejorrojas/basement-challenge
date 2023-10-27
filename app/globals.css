@@ -5,8 +5,8 @@
 @import "../public/fonts/basement-grotesque.css";
 
 :root {
-    --gap: 1rem;
-  }
+  --gap: 1rem;
+}
 
 @layer utilities {
   .text-shadow-white {
@@ -18,18 +18,28 @@
   }
 }
 
-@font-face { 
-    font-family: "basement"; 
-    src: url("../public/fonts/basement-grotesqueRegularRegular.woff"); 
-} 
+@font-face {
+  font-family: "basement";
+  src: url("../public/fonts/basement-grotesqueRegularRegular.woff");
+}
 
 *,
 *:before,
 *:after {
   cursor: url("../public/eye.svg"), auto;
-  font-family: 'Basement Grotesque', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-
+  font-family:
+    "Basement Grotesque",
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
 }
 
 html,
@@ -41,8 +51,19 @@ body,
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  font-family: 'Basement Grotesque', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:
+    "Basement Grotesque",
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
 }
 
 button {
