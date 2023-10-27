@@ -32,12 +32,12 @@ const Card: FC<Product> = (product) => {
         src={image}
         alt={name}
       />
-      <div className="xs:hidden lg:flex absolute w-full h-full -top-10  justify-center invisible group-hover:visible  ease-in-out delay-200">
+      <div className="flex absolute w-full h-full lg:-top-10  justify-center invisible group-hover:visible  ease-in-out delay-200 xs:max-lg:hidden">
         <Image
           className={`${
             animate && "animate-wiggle"
-          } xs:w-48 md:w-72 lg:w-32 xl:w-56 2xl:w-72`}
-          src="/hover.svg"
+          } ease-out duration-500  xs:w-48 md:w-72 lg:w-32 xl:w-56 2xl:w-72`}
+          src="/home/hover.svg"
           width={300}
           height={300}
           alt=""

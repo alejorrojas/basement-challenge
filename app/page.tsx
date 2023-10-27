@@ -1,6 +1,6 @@
 import Image from "next/image";
-import header from "../public/header.svg";
-import footer from "../public/footer.svg";
+import header from "../public/home/header.svg";
+import footer from "../public/home/footer.svg";
 import Marquee from "../components/Marquee";
 import { Card } from "../components/Card";
 
@@ -28,14 +28,14 @@ export default async function Home() {
       </header>
       <Image
         className="xs:invisible lg:visible absolute lg:left-28 lg:w-20 lg:top-[52%] xl:top-[65%] xl:w-40 2xl:w-48 2xl:top-[70%] animate-spin-slow"
-        src="/asterisk.svg"
+        src="/home/asterisk.svg"
         width={150}
         height={150}
         alt=""
       />
       <Image
         className="xs:invisible lg:visible absolute lg:right-20 lg:w-20 lg:top-[40%]  xl:top-[50%] xl:w-40 2xl:w-48 2xl:top-[58%] animate-spin-slow-alt"
-        src="/asterisk.svg"
+        src="/home/asterisk.svg"
         width={150}
         height={150}
         alt=""
