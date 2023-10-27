@@ -48,7 +48,7 @@ const ModalMobile = () => {
         <div className="flex flex-col">
           <button
             onClick={modalClose}
-            className="cursor-pointer text-right text-base xs:mb-2 xl:mb-4 font-extrabold"
+            className="cursor-pointer text-right text-base xs:mb-6 font-extrabold"
           >
             → CLOSE
           </button>
