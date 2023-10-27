@@ -32,7 +32,7 @@ const Card: FC<Product> = (product) => {
         src={image}
         alt={name}
       />
-      <div className="flex absolute w-full h-full lg:-top-10  justify-center invisible group-hover:visible  ease-in-out delay-200 xs:max-lg :hidden">
+      <div className="flex absolute w-full h-full xs:top-10 lg:-top-10  justify-center invisible group-hover:visible  ease-in-out delay-200">
         <Image
           className={`${
             animate && "animate-wiggle"
