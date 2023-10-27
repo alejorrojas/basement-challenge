@@ -27,7 +27,7 @@ const ModalMobile = () => {
   };
 
   return (
-    <div className="lg:hidden">
+    <div className="lg:hidden ">
       <button
         onClick={modalOpen}
         className="xs:mag-lg:hidden m-0 xs:p-2 md:p-3 w-40 xs:w-32 2xl:w-40 xs:border-2 border-[3px] rounded-[2rem] border-solid border-white cursor-pointer 2xl:text-xl"
@@ -35,15 +35,13 @@ const ModalMobile = () => {
         CART ({products.length})
       </button>
 
-      
-
       <div
-        className={`fixed bg-black/90 w-screen h-screen top-0 left-0 z-40 ${
+        className={`fixed bg-black w-screen h-screen top-0 left-0 z-40 ${
           isOpen ? "translate-y-0" : "-translate-y-full"
         } ease-out duration-500`}
       />
       <div
-        className={`absolute bg-black w-screen min-h-screen z-50 top-0 left-0 px-4 py-8 flex flex-col justify-between ${
+        className={`absolute bg-black w-screen min-h-screen z-50 top-0 left-0 md:px-10 px-4 py-8 flex flex-col justify-between ${
           isOpen ? "translate-y-0" : "-translate-y-full"
         } ease-out duration-500`}
       >
@@ -56,7 +54,7 @@ const ModalMobile = () => {
           </button>
 
           <Image
-            className="max-w-[600px] w-full mb-6"
+            className="max-w-[480px] w-[90%] mx-auto mb-6"
             width={500}
             height={500}
             src="/your-cart-text.svg"
@@ -77,7 +75,7 @@ const ModalMobile = () => {
           </div>
           <div className="xs:border-b-2 w-full lg:border-l-2" />
           <Image
-            className=" w-full mt-6"
+            className="mx-auto w-[90%] mt-6"
             width={500}
             height={500}
             src="/checkout-text.svg"

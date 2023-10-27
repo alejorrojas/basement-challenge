@@ -51,9 +51,9 @@ const CardCheckout: FC<Product> = ({
   };
 
   return (
-    <div className="flex border-solid xs:max-md:p-2 border-2 xs:max-md:border-[1px] border-white w-full p-4 gap-3 2xl:gap-10">
+    <div className="flex border-solid xs:max-md:p-2 border-2 xs:max-md:border-[1px] border-white w-full  p-4 gap-3 2xl:gap-10">
       <Image
-        className="bg-gradient-to-t from-[#1c1c1c] xs:max-md:w-24  lg:max-2xl:w-36"
+        className="bg-gradient-to-t from-[#1c1c1c] xs:w-24 md:w-32  lg:max-2xl:w-36"
         width={200}
         height={300}
         src={image}
@@ -85,7 +85,7 @@ const CardCheckout: FC<Product> = ({
               </div>
             </div>
 
-            <div className="flex xs:max-md:flex-col xs:max-md:items-start gap-1 2xl:gap-6 items-center">
+            <div className="flex xs:max-lg:flex-col xs:max-lg:items-start gap-1 2xl:gap-6 items-center">
               <div className="flex items-center xs:max-md:gap-1 gap-3">
                 <h4 className="xs:max-md:text-xs text-[1rem] 2xl:text-2xl">
                   SIZE:{" "}
