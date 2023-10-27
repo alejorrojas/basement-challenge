@@ -35,14 +35,16 @@ const ModalMobile = () => {
         CART ({products.length})
       </button>
 
+      
+
       <div
         className={`fixed bg-black/90 w-screen h-screen top-0 left-0 z-40 ${
-          isOpen ? "translate-x-0" : "translate-x-full"
+          isOpen ? "translate-y-0" : "-translate-y-full"
         } ease-out duration-500`}
       />
       <div
         className={`absolute bg-black w-screen min-h-screen z-50 top-0 left-0 px-4 py-8 flex flex-col justify-between ${
-          isOpen ? "translate-x-0" : "translate-x-full"
+          isOpen ? "translate-y-0" : "-translate-y-full"
         } ease-out duration-500`}
       >
         <div className="flex flex-col">
