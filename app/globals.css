@@ -26,7 +26,7 @@
 *,
 *:before,
 *:after {
-  cursor: url("../public/eye.svg"), auto;
+  cursor: url("../public/cursor/eye.svg"), auto;
   font-family:
     "Basement Grotesque",
     -apple-system,
