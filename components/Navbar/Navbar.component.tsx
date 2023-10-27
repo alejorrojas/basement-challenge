@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React, { Fragment, useCallback, useState } from "react";
+import React from "react";
 import logoSmall from "../../public/logo-sm.svg";
 import ModalCheckout from "./ModalCheckout.component";
 
@@ -31,4 +31,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

@@ -23,7 +23,7 @@ const ModalCheckout = () => {
         CART ({products.length})
       </Dialog.Trigger>
       <Dialog.Portal>
-        <Dialog.Overlay className="fixed inset-0 bg-black/50" />
+        <Dialog.Overlay className="xs:hidden lg:fixed inset-0 bg-black/50" />
         <Dialog.Overlay className="DialogOverlay">
           <Dialog.Content className="DialogContent flex xs:max-lg:px-4 justify-between flex-col z-50 fixed top-0 right-0 xl:w-[45%] min-h-[80%] lg:w-[60%] xs:max-lg:w-screen xs:max-lg:h-screen  bg-black border-solid border-t-0 border-r-0 border-white border-2 xs:max-lg:border-0">
             <div className="xs:max-lg:py-4 lg:p-8 flex flex-col">
