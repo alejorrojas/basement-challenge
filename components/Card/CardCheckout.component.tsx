@@ -61,16 +61,16 @@ const CardCheckout: FC<Product> = ({
       />
 
       <div className="flex flex-col justify-between w-full">
-        <header>
-          <h3 className="xs:max-md:text-xs  text-[1rem] 2xl:text-3xl">
+        <header className="flex flex-col gap-1 ">
+          <h3 className="xs:max-md:text-xs text-left text-[1rem] 2xl:text-3xl">
             {name.toUpperCase()}
           </h3>
-          <h4 className="xs:text-xs text-base 2xl:text-xl text-[#999999] ">
+          <h4 className="xs:text-xs text-base text-left 2xl:text-xl text-[#999999] ">
             {description}
           </h4>
         </header>
 
-        <footer className="relative flex justify-between">
+        <footer className="xs:max-lg:mt-2 relative flex justify-between">
           <div className="flex flex-col gap-4">
             <div className="flex xs:gap-4 gap-8 items-center">
               <h4 className="xs:max-md:text-xs  text-[1rem] 2xl:text-2xl">
@@ -85,8 +85,8 @@ const CardCheckout: FC<Product> = ({
               </div>
             </div>
 
-            <div className="flex gap-1 2xl:gap-6 items-center">
-              <div className="flex items-center gap-3">
+            <div className="flex xs:max-md:flex-col xs:max-md:items-start gap-1 2xl:gap-6 items-center">
+              <div className="flex items-center xs:max-md:gap-1 gap-3">
                 <h4 className="xs:max-md:text-xs text-[1rem] 2xl:text-2xl">
                   SIZE:{" "}
                 </h4>
@@ -97,17 +97,17 @@ const CardCheckout: FC<Product> = ({
                       value === checkoutProduct.checkoutSize
                         ? "border-white border-2  rounded-full "
                         : "border-black border-2  rounded-full "
-                    } xs:max-md:border-[1px] xs:px-1  xl:w-9 xl:h-9 xl:p-1 2xl:w-10 2xl:h-10 2xl:p-2 xs:max-md:text-sm   text-sm`}
+                    } xs:max-md:border-[1px] xs:px-1 xs:max-lg:w-6 xs:max-lg:h-6 xl:w-9 xl:h-9 xl:p-1 2xl:w-10 2xl:h-10 2xl:p-2 xs:max-md:text-xs   text-sm`}
                     key={value}
                   >
                     {value}
                   </button>
                 ))}
               </div>
+              <h3 className="xs:max-md:text-base  md:text-2xl 2xl:text-4xl">
+                ${price}
+              </h3>
             </div>
-            <h3 className="xs:max-md:text-xs   md:text-2xl 2xl:text-4xl absolute right-0 bottom-0">
-              ${price}
-            </h3>
           </div>
         </footer>
       </div>
@@ -116,3 +116,4 @@ const CardCheckout: FC<Product> = ({
 };
 
 export default CardCheckout;
+

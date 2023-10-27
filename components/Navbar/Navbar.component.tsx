@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import logoSmall from "../../public/logo-sm.svg";
 import ModalCheckout from "./ModalCheckout.component";
+import ModalMobile from "./ModalMobile.component";
 
 const Navbar = () => {
   return (
@@ -25,6 +26,7 @@ const Navbar = () => {
           />
         </div>
         <ModalCheckout />
+        <ModalMobile />
       </nav>
     </>
   );
