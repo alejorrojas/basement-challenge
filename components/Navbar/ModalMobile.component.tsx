@@ -30,7 +30,7 @@ const ModalMobile = () => {
     <div className="lg:hidden">
       <button
         onClick={modalOpen}
-        className="xs:mag-lg:hidden m-0 xs:p-2 md:p-3 w-40 xs:w-32 2xl:w-40 xs:border-2 border-[3px] rounded-[2rem] border-solid border-purple-200 cursor-pointer 2xl:text-xl"
+        className="xs:mag-lg:hidden m-0 xs:p-2 md:p-3 w-40 xs:w-32 2xl:w-40 xs:border-2 border-[3px] rounded-[2rem] border-solid border-white cursor-pointer 2xl:text-xl"
       >
         CART ({products.length})
       </button>
