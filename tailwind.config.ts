@@ -13,7 +13,7 @@ const config: Config = {
       ...defaultTheme.screens,
     },
     cursor: {
-      default: "url('../public/eye.svg'), auto",
+      default: "url('../public/cursor/eye.svg'), auto",
     },
     extend: {
       fontFamily: {

@@ -57,7 +57,7 @@ const ModalMobile = () => {
             className="max-w-[480px] w-[90%] mx-auto mb-6"
             width={500}
             height={500}
-            src="/your-cart-text.svg"
+            src="/nav/your-cart-text.svg"
             alt=""
           />
 
@@ -78,7 +78,7 @@ const ModalMobile = () => {
             className="mx-auto w-[90%] mt-6"
             width={500}
             height={500}
-            src="/checkout-text.svg"
+            src="/nav/checkout-text.svg"
             alt=""
           />
         </div>

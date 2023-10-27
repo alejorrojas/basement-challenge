@@ -37,7 +37,7 @@ const Card: FC<Product> = (product) => {
           className={`${
             animate && "animate-wiggle"
           } ease-out duration-500  xs:w-48 md:w-72 lg:w-32 xl:w-56 2xl:w-72`}
-          src="/hover.svg"
+          src="/home/hover.svg"
           width={300}
           height={300}
           alt=""

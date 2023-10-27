@@ -53,7 +53,7 @@ const CardCheckout: FC<Product> = ({
   return (
     <div className="flex border-solid xs:max-md:p-2 border-2 xs:max-md:border-[1px] border-white w-full  p-4 gap-3 2xl:gap-10">
       <Image
-        className="bg-gradient-to-t from-[#1c1c1c] xs:w-24 md:w-32  lg:max-2xl:w-36 2xl:w-44"
+        className="bg-gradient-to-t from-[#1c1c1c] xs:w-24 md:w-32  lg:max-2xl:w-36 xl:w-44 2xl:w-48"
         width={200}
         height={300}
         src={image}
