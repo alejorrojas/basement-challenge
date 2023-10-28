@@ -51,7 +51,7 @@ const CardCheckout: FC<Product> = ({
   };
 
   return (
-    <div className="flex border-solid xs:max-md:p-2 border-2 xs:max-md:border-[1px] border-white w-full  p-4 gap-3 2xl:gap-10">
+    <div className="product-checkout flex border-solid xs:max-md:p-2 border-2 xs:max-md:border-[1px] border-white w-full  p-4 gap-3 2xl:gap-10">
       <Image
         className="bg-gradient-to-t from-[#1c1c1c] xs:w-24 md:w-32  lg:max-2xl:w-36 xl:w-44 2xl:w-48"
         width={200}
@@ -85,7 +85,7 @@ const CardCheckout: FC<Product> = ({
               </div>
             </div>
 
-            <div className="flex xs:max-lg:flex-col lg:justify-between xs:max-lg:items-start gap-1 2xl:gap-6">
+            <div className="sizes flex xs:max-lg:flex-col lg:justify-between xs:max-lg:items-start gap-1 2xl:gap-6">
               <div className="flex items-center  xs:max-md:gap-1 gap-3">
                 <h4 className="xs:max-md:text-xs text-[1rem] 2xl:text-xl">
                   SIZE:{" "}
@@ -99,6 +99,7 @@ const CardCheckout: FC<Product> = ({
                         : "border-black border-2  rounded-full "
                     } xs:max-md:border-[1px] xs:px-1 xs:max-lg:w-6 xs:max-lg:h-6 xl:w-9 xl:h-9 xl:p-1 2xl:w-10 2xl:h-10 2xl:p-2 xs:max-md:text-xs   text-sm`}
                     key={value}
+                    id={value}
                   >
                     {value}
                   </button>
