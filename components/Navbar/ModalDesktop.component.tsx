@@ -25,8 +25,10 @@ const ModalCheckout = () => {
         </Dialog.Trigger>
         <Dialog.Portal>
           <Dialog.Overlay className="lg:fixed inset-0 bg-black/50" />
-          <Dialog.Overlay className=" DialogOverlay">
-            <Dialog.Content className="DialogContent flex xs:max-lg:px-4 justify-between flex-col z-50 fixed top-0 right-0 xl:w-[45%] min-h-[80%] lg:w-[60%] xs:max-lg:w-screen xs:max-lg:h-screen  bg-black border-solid border-t-0 border-r-0 border-white border-2 xs:max-lg:border-0">
+            <Dialog.Content
+              data-cy="modal-desktop"
+              className="flex xs:max-lg:px-4 justify-between flex-col z-50 fixed top-0 right-0 xl:w-[45%] min-h-[80%] lg:w-[60%] xs:max-lg:w-screen xs:max-lg:h-screen  bg-black border-solid border-t-0 border-r-0 border-white border-2 xs:max-lg:border-0"
+            >
               <div className="xs:max-lg:py-4 lg:p-8 flex flex-col">
                 <Dialog.Close className="cursor-pointer text-right text-xl xs:mb-2 xl:mb-4 font-extrabold">
                   → CLOSE
@@ -47,7 +49,7 @@ const ModalCheckout = () => {
               <div className="flex xs:max-lg:flex-col md:gap-3 xs:max-lg:border-0  justify-between xs:text-2xl xl:text-2xl 2xl:text-4xl border-solid border-t-2 border-white">
                 <div className="flex items-center xs:max-lg:justify-between">
                   <h3 className="xs:max-lg:py-4 lg:p-8 w-3/4">TOTAL: </h3>
-                  <span> ${totalPrice()}</span>
+                  <span data-cy="total-price" > ${totalPrice()}</span>
                 </div>
                 <div className="xs:border-b-2 lg:border-l-2" />
                 <h3 className="xs:max-lg:text-center xs:max-lg:tracking-widest xs:max-lg:px-4  xs:max-lg:text-[12vw] p-8 text-black text-shadow-white">
@@ -56,7 +58,6 @@ const ModalCheckout = () => {
                 </h3>
               </div>
             </Dialog.Content>
-          </Dialog.Overlay>
         </Dialog.Portal>
       </Dialog.Root>
     </div>

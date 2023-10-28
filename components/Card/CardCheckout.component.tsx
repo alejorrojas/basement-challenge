@@ -78,7 +78,7 @@ const CardCheckout: FC<Product> = ({
               </h4>
               <div className="m-0 xs:w-16 xs:px-2  2xl:py-2  xl:px-5 gap-1 items-center md:w-24 flex justify-between xs:max-md:text-xs  md:text-lg xs:border-2 border-[3px] rounded-[2rem] border-solid border-white cursor-pointer">
                 <button onClick={removeQuantity}>-</button>
-                <span className="xs:text-xs text-[1rem] 2xl:text-lg">
+                <span data-cy="quantity" className="xs:text-xs text-[1rem] 2xl:text-lg">
                   {checkoutProduct?.quantity}
                 </span>
                 <button onClick={addQuantity}>+</button>

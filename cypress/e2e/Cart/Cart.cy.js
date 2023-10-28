@@ -6,7 +6,7 @@ describe("Add products to the cart", () => {
     cy.clearLocalStorage();
   });
 
-  xit("Should add the product correctly", () => {
+  it("Should add the product correctly", () => {
     // Click on the first product
     cy.get(".product-item:first-child").click();
 
@@ -14,7 +14,7 @@ describe("Add products to the cart", () => {
     cy.get("button").contains("CART (1)");
   });
 
-  xit("Should add multiple products to the cart", () => {
+  it("Should add multiple products to the cart", () => {
     // Click on the first product
     cy.get(".product-item:first-child").click();
 
@@ -28,7 +28,7 @@ describe("Add products to the cart", () => {
     cy.get("button").contains("CART (3)");
   });
 
-  xit("Should add the product correctly to localStorage", () => {
+  it("Should add the product correctly to localStorage", () => {
     // Click on the first product
     cy.get(".product-item:first-child").click();
 
@@ -44,7 +44,7 @@ describe("Add products to the cart", () => {
     });
   });
 
-  xit("Should add multiple products correctly to localStorage", () => {
+  it("Should add multiple products correctly to localStorage", () => {
     // Click on the first product
     cy.get(".product-item:first-child").click();
 
@@ -68,11 +68,9 @@ describe("Add products to the cart", () => {
     });
   });
 
-  //@todo
-  xit("Should allow to modify the size of the product from the cart", () => {
+  it("Should allow to modify the size of the product from the cart", () => {
     // Click on the first product
     cy.get(".product-item:first-child").click();
-
 
     //Verify the initial product's size
     cy.getAllLocalStorage().then((result) => {
@@ -86,15 +84,126 @@ describe("Add products to the cart", () => {
 
     cy.get("button").contains("CART (1)").click();
 
-    cy.get("button[id='M  ']")
+    cy.get('[data-cy="modal-desktop"]').within(() => {
+      cy.get("button[id='L']").click();
+    });
 
+    //Verify the modify product's size
+    cy.getAllLocalStorage().then((result) => {
+      //Get the actual value from the storage
+      const origin = "http://localhost:3000";
+      const productsJSON = result[origin].products;
+      const products = JSON.parse(productsJSON);
 
+      expect(products[0].checkoutSize).to.eq("L");
+    });
+  });
 
+  describe("Should allow to modify the quantity of the product from the cart", () => {
+    it("Should allow to add more products", () => {
+      // Click on the third product
+      cy.get(".product-item:nth-child(3)").click();
 
+      //Verify the initial quantity
+      cy.getAllLocalStorage().then((result) => {
+        //Get the actual value from the storage
+        const origin = "http://localhost:3000";
+        const productsJSON = result[origin].products;
+        const products = JSON.parse(productsJSON);
 
+        expect(products[0].quantity).to.eq(1);
+      });
 
+      cy.get("button").contains("CART (1)").click();
 
-    
+      //Verify the initial quantity
+      cy.get("[data-cy=quantity]").contains(1);
+
+      //Add more products actions
+      cy.get('[data-cy="modal-desktop"]').within(() => {
+        cy.get("button").contains("+").click();
+        cy.get("button").contains("+").click();
+      });
+
+      //Verify the modify quantity
+      cy.getAllLocalStorage().then((result) => {
+        //Get the actual value from the storage
+        const origin = "http://localhost:3000";
+        const productsJSON = result[origin].products;
+        const products = JSON.parse(productsJSON);
+
+        expect(products[0].quantity).to.eq(3);
+      });
+
+      cy.get("[data-cy=quantity]").contains(3);
+    });
+
+    it("Should allow to remove products", () => {
+      // Click on the third product
+      cy.get(".product-item:nth-child(3)").click();
+
+      //Verify the initial quantity
+      cy.getAllLocalStorage().then((result) => {
+        //Get the actual value from the storage
+        const origin = "http://localhost:3000";
+        const productsJSON = result[origin].products;
+        const products = JSON.parse(productsJSON);
+
+        expect(products[0].quantity).to.eq(1);
+      });
+
+      cy.get("button").contains("CART (1)").click();
+
+      //Add more products actions
+      cy.get('[data-cy="modal-desktop"]').within(() => {
+        cy.get("button").contains("+").click();
+        cy.get("button").contains("+").click();
+      });
+
+      //Verify the initial quantity
+      cy.get("[data-cy=quantity]").contains(3);
+
+      //Delete products
+      cy.get('[data-cy="modal-desktop"]').within(() => {
+        cy.get("button").contains("-").click();
+      });
+
+      //Verify the modify quantity
+      cy.getAllLocalStorage().then((result) => {
+        //Get the actual value from the storage
+        const origin = "http://localhost:3000";
+        const productsJSON = result[origin].products;
+        const products = JSON.parse(productsJSON);
+
+        expect(products[0].quantity).to.eq(2);
+      });
+
+      cy.get("[data-cy=quantity]").contains(2);
+    });
+  });
+
+  it("Should update and sum correctly the total price", () => {
+    // Click on the third product
+    cy.get(".product-item:nth-child(3)").click();
+
+    cy.get("button").contains("CART (1)").click();
+
+    cy.get('[data-cy="total-price"]').should("have.text", " $23");
+
+    //Add more products actions
+    cy.get('[data-cy="modal-desktop"]').within(() => {
+      cy.get("button").contains("+").click();
+      cy.get("button").contains("+").click();
+    });
+
+    cy.get('[data-cy="total-price"]').should("have.text", " $69");
+
+    //Add delete products actions
+    cy.get('[data-cy="modal-desktop"]').within(() => {
+      cy.get("button").contains("-").click();
+    });
+
+    cy.get('[data-cy="total-price"]').should("have.text", " $46");
 
   });
 });
