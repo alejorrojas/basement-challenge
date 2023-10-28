@@ -32,3 +32,12 @@ npm install
 # Correr el servidor de desarrollo
 npm run dev
 ```
+
+## Preview 📸
+
+<img src="./public/preview/preview (1).png" alt="preview-img" />
+<img src="./public/preview/preview (5).png" alt="preview-img" />
+<img src="./public/preview/preview (6).png" alt="preview-img" />
+
+
+

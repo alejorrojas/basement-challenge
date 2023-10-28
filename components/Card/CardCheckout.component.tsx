@@ -80,6 +80,7 @@ const CardCheckout: FC<Product> = ({
                 <button onClick={removeQuantity}>-</button>
                 <span
                   data-cy="quantity"
+                  data-testid="quantity"
                   className="xs:text-xs text-[1rem] 2xl:text-lg"
                 >
                   {checkoutProduct?.quantity}
@@ -95,6 +96,7 @@ const CardCheckout: FC<Product> = ({
                 </h4>
                 {options[0].values.map((value) => (
                   <button
+                    data-testid="size"
                     onClick={() => updateSize(value)}
                     className={`${
                       value === checkoutProduct.checkoutSize
