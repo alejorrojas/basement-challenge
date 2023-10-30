@@ -19,7 +19,7 @@ export default async function Home() {
       <header className="w-full flex flex-col xs:gap-5 md:gap-12 items-center justify-center">
         <Image
           className="w-full md:px-8 xs:px-4 px-10"
-          alt="Basement"
+          alt="Basement Supply"
           src={header}
         />
         <section className="overflow-hidden w-full">
