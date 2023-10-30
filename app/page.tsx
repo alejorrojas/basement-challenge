@@ -19,7 +19,7 @@ export default async function Home() {
       <header className="w-full flex flex-col xs:gap-5 md:gap-12 items-center justify-center">
         <Image
           className="w-full md:px-8 xs:px-4 px-10"
-          alt="Basement Supply"
+          alt="basement supply"
           src={header}
         />
         <section className="overflow-hidden w-full">
@@ -44,7 +44,7 @@ export default async function Home() {
         {products?.map((product) => <Card key={product.id} {...product} />)}
       </section>
       <footer className="w-full md:px-8 xs:px-4 px-10 pb-5">
-        <Image alt="Basement" className="w-full" src={footer} />
+        <Image alt="basement footer" className="w-full" src={footer} />
       </footer>
     </main>
   );
